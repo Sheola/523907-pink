@@ -9,38 +9,30 @@
       <a class="page-header__logo">
         <img src="http://placehold.it/150x100">
       </a>
-      <button class="page-header__button-nav" type="button">Открыть меню</button>
+      <button class="page-header__button-nav" type="button">Меню</button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list">
           <li class="site-list_item">
             <a>Главная</a>
           </li>
-        </ul>
-        <ul class="main-nav__list site-list">
           <li class="site-list_item">
             <a href="photo.html">Фотографии</a>
           </li>
-        </ul>
-        <ul class="main-nav__list site-list">
           <li class="site-list_item">
             <a href="form.html">Конкурс</a>
           </li>
-        </ul>
-        <ul class="main-nav__list site-list">
           <li class="site-list_item">
             <a href="#">HTML Academy</a>
           </li>
         </ul>
-        
       </nav>
     </header>
     <main class="page-header">
       <h1 class="visually-hidden">Pink</h1>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <img src="http://placehold.it/150x100">
         <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
-        <div class="download____wrapper">
+        <div class="download__wrapper">
           <ul class="download__list">
             <li class="download__item">
               <a class="download__link download__link--apple" href="www.apple.com/ru/itunes/">Apple</a>
@@ -88,11 +80,22 @@
             </p>
           </li>
         </ul>
-        <img src="http://placehold.it/150x100">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
                 <cite class="reviews__author-name">Николай Петров</cite>
@@ -109,20 +112,53 @@
       <section class="price">
         <div class="price__wrapper slider">
           <h2 class="visually-hidden">Цена на наборы</h2>
-          <div class="price__list slider__list">
-            <h3 class="price__name">Стандарт</h3>
-            <p class="price__value">3,99 USD</p>
-            <ul class="price__service">
-              <li class="price__service__item price__service__item--yes">
-                <p class="price__text">Розовый фильтр</p>
-              </li>
-              <li class="price__service__item price__service__item--yes">
-                <p class="price__text">Смайлики</p>
-              </li>
-              <li class="price__service__item price__service__item--no">
-                <p class="price__text">Комментарии</p>
-              </li>
-            </ul>
+          <div class="slider__list">
+            <div class="price__list slider__item">
+              <h3 class="price__name">База</h3>
+              <p class="price__value">1,99 USD</p>
+              <ul class="price__service">
+                <li class="price__service__item price__service__item--yes">
+                  <p class="price__text">Розовый фильтр</p>
+                </li>
+                <li class="price__service__item price__service__item--no">
+                  <p class="price__text">Смайлики</p>
+                </li>
+                <li class="price__service__item price__service__item--no">
+                  <p class="price__text">Комментарии</p>
+                </li>
+              </ul>
+            </div>
+            <div class="price__list slider__item">
+              <span class="price__list__hit">Хит</span>
+              <h3 class="price__name">Стандарт</h3>
+              <p class="price__value">3,99 USD</p>
+              <ul class="price__service">
+                <li class="price__service__item price__service__item--yes">
+                  <p class="price__text">Розовый фильтр</p>
+                </li>
+                <li class="price__service__item price__service__item--yes">
+                  <p class="price__text">Смайлики</p>
+                </li>
+                <li class="price__service__item price__service__item--no">
+                  <p class="price__text">Комментарии</p>
+                </li>
+              </ul>
+            </div>
+             <div class="price__list slider__item">
+              <h3 class="price__name">Анлим</h3>
+              <p class="price__value">9,99 USD</p>
+              <ul class="price__service">
+                <li class="price__service__item price__service__item--yes">
+                  <p class="price__text">Розовый фильтр</p>
+                </li>
+                <li class="price__service__item price__service__item--yes">
+                  <p class="price__text">Смайлики</p>
+                </li>
+                <li class="price__service__item price__service__item--yes">
+                  <p class="price__text">Комментарии</p>
+                </li>
+              </ul>
+            </div>
           </div>
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>

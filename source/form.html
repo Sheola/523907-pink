@@ -6,36 +6,29 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="http://placehold.it/150x100">
       </a>
-      <button class="page-header__button-nav" type="button">Открыть меню</button>
+      <button class="page-header__button-nav" type="button">Меню</button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list">
           <li class="site-list_item">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
-        </ul>
-        <ul class="main-nav__list site-list">
           <li class="site-list_item">
             <a href="photo.html">Фотографии</a>
           </li>
-        </ul>
-        <ul class="main-nav__list site-list">
           <li class="site-list_item">
             <a href="form.html">Конкурс</a>
           </li>
-        </ul>
-        <ul class="main-nav__list site-list">
           <li class="site-list_item">
             <a href="#">HTML Academy</a>
           </li>
         </ul>
-        
       </nav>
     </header>
     <main class="page-header">
-      <h1 class="visually-hidden">Pink</h1>
+      <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="page__competition">
         <h2 class="visually-hidden">Отправка заявки на конкурс</h2>
         <p class="competition__text-preview">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
@@ -55,17 +48,17 @@
           <p class="competition-item">
             <b class="competition-attaining">Ваши безбашенные достижения в путешествии</b>
             <label for="competition-attaining1">Сделал селфи с акулой</label>
-            <input id="competition-attaining1" type="checkbox" name="attaining" value="">
+            <input id="competition-attaining1" type="checkbox" name="attaining1" value="" checked>
             <label for="competition-attaining2">Обгорел на пляже</label>
-            <input id="competition-attaining2" type="checkbox" name="attaining" value="">
+            <input id="competition-attaining2" type="checkbox" name="attaining2" value="" checked>
             <label for="competition-attaining3">Видел Чака Норриса</label>
-            <input id="competition-attaining3" type="checkbox" name="attaining" value="">
+            <input id="competition-attaining3" type="checkbox" name="attaining3" value="">
             <label for="competition-attaining4">Накупил сувениров</label>
-            <input id="competition-attaining4" type="checkbox" name="attaining" value="">
+            <input id="competition-attaining4" type="checkbox" name="attaining4" value="">
             <label for="competition-attaining5">Удержал башню</label>
-            <input id="competition-attaining5" type="checkbox" name="attaining" value="">
+            <input id="competition-attaining5" type="checkbox" name="attaining5" value="" checked>
             <label for="competition-attaining6">Разгромил отель</label>
-            <input id="competition-attaining6" type="checkbox" name="attaining" value="">
+            <input id="competition-attaining6" type="checkbox" name="attaining6" value="">
           </p>
           <p class="competition-item">
             <label for="competition-phone">Номер телефона</label>
@@ -86,7 +79,7 @@
           </p>
           <p class="competition-item">
             <label for="competition-text">Опишите свои эмоции</label>
-            <input id="competition-text" type="text" name="text" value="" placeholder="Можно прям в красках, не стесняясь в выражениях">
+             <textarea name="comment" id="competition-text">Можно прям в красках, не стесняясь в выражениях</textarea>
           </p>
           <button class="competition__button button" type="submit">Отправить форму</button>
         </form>
@@ -112,7 +105,7 @@
         </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

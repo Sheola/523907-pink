@@ -1,0 +1,40 @@
+.page-header {
+  background-image: url(/img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+} 
+
+
+.page-header--hand {
+  background-image: url(/img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 300px;
+}
+
+.page-header__button-nav {
+  background-position: 0 0;
+  
+  width: 50px;
+  height: 25px;
+  background-image: url(/img/icon-menu-burger.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  content: "";
+}
+
+.main-nav {
+  background-color: #283645;
+}
+
+.main-nav__list{
+  list-style: none;
+}
+
+.site-list_item a{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700; 
+  color: #ffffff;
+}

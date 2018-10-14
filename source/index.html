@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--hand">
       <a class="page-header__logo">
-        <img src="http://placehold.it/150x100">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
       </a>
-      <button class="page-header__button-nav" type="button">Меню</button>
+      <button class="page-header__button-nav" type="button"><span class="visually-hidden">Меню</span></button>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="site-list_item">
@@ -27,7 +29,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-header">
+    <main class="page-main">
       <h1 class="visually-hidden">Pink</h1>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение</h2>
@@ -35,13 +37,13 @@
         <div class="download__wrapper">
           <ul class="download__list">
             <li class="download__item">
-              <a class="download__link download__link--apple" href="www.apple.com/ru/itunes/">Apple</a>
+              <a class="download__link download__link--apple" href="www.apple.com/ru/itunes/"><span class="visually-hidden">Apple</span></a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--android" href="play.google.com/store/apps">Android</a>
+              <a class="download__link download__link--android" href="play.google.com/store/apps"><span class="visually-hidden">Android</span></a>
             </li>
             <li class="download__item">
-              <a class="download__link download__link--windows" href="www.microsoft.com/ru-ru/store/appsvnext/windows">Windows</a>
+              <a class="download__link download__link--windows" href="www.microsoft.com/ru-ru/store/appsvnext/windows"><span class="visually-hidden">Windows</span></a>
             </li>
           </ul>
           <b class="download__title"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</b>
@@ -114,8 +116,10 @@
           <h2 class="visually-hidden">Цена на наборы</h2>
           <div class="slider__list">
             <div class="price__list slider__item">
-              <h3 class="price__name">База</h3>
-              <p class="price__value">1,99 USD</p>
+              <div class="price__list__name">
+                <h3 class="price__name">База</h3>
+                <p class="price__value">1,99 USD</p>
+              </div>  
               <ul class="price__service">
                 <li class="price__service__item price__service__item--yes">
                   <p class="price__text">Розовый фильтр</p>
@@ -129,9 +133,11 @@
               </ul>
             </div>
             <div class="price__list slider__item">
-              <span class="price__list__hit">Хит</span>
-              <h3 class="price__name">Стандарт</h3>
-              <p class="price__value">3,99 USD</p>
+              <div class="price__list__name">
+                <span class="price__list__hit">Хит</span>
+                <h3 class="price__name">Стандарт</h3>
+                <p class="price__value">3,99 USD</p>
+              </div>
               <ul class="price__service">
                 <li class="price__service__item price__service__item--yes">
                   <p class="price__text">Розовый фильтр</p>
@@ -144,9 +150,11 @@
                 </li>
               </ul>
             </div>
-             <div class="price__list slider__item">
-              <h3 class="price__name">Анлим</h3>
-              <p class="price__value">9,99 USD</p>
+            <div class="price__list slider__item">
+              <div class="price__list__name">
+                <h3 class="price__name">Анлим</h3>
+                <p class="price__value">9,99 USD</p>
+              </div>
               <ul class="price__service">
                 <li class="price__service__item price__service__item--yes">
                   <p class="price__text">Розовый фильтр</p>
@@ -170,7 +178,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <b class="contacts__text">Звоните:</b>
         <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
         <b class="contacts__text">Пишите:</b>

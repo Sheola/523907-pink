@@ -1,0 +1,46 @@
+.upload {
+  background-color: #f2f2f2;
+}
+
+.upload__file-input {
+  display: none;
+}
+
+
+.upload__label {
+  display: block;
+  
+  width: 280px;
+  height: 375px;
+  
+  cursor: pointer;
+  
+  background-image: url(/img/photo-road-mobile@1x.jpg);
+}
+
+.upload__work-photo {
+  list-style: none;
+}
+
+.upload__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #d22856;
+  padding: 17px 35px;
+  vertical-align: middle;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+
+.cancel__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #283645;
+  padding: 17px 35px;
+  vertical-align: middle;
+  border: 3px solid #283645;
+  border-radius: 30px;
+  opacity: 0.1;
+}

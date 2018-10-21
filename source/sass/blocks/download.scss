@@ -2,8 +2,6 @@
   padding-top: 65px;
   margin: 0 auto;
 }
-
-
 /* "Рука" */
 .download::before {
   margin: 0 auto;
@@ -155,7 +153,7 @@
 }
 
 @media (min-width: $desktop-width) {
-   .download {
+  .download {
     width: 960px;
     position: relative;
     margin: 0 auto;
@@ -179,7 +177,3 @@
     padding-left: 0;
   }
 }
-
-
-
-

@@ -40,7 +40,7 @@
   color: #ffffff;
   background-color: #2aab6d;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   text-transform: uppercase;
 }
 
@@ -57,7 +57,7 @@
   color: #ffffff;
   background-color: #2aab6d;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   text-transform: uppercase;
 }
 
@@ -99,7 +99,7 @@
 }
 
 @media (min-width: $desktop-width) {
-   .modal {
+  .modal {
     width: 460px;
     padding-top: 45px;
     padding-right: 160px;

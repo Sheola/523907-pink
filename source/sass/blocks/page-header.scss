@@ -11,15 +11,14 @@
   background-image: url(/img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   height: 730px;
-} 
-
+}
 
 @media (min-width: $tablet-width) {
   .page-header {
     background-image: url(/img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     height: 730px;
-  } 
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -27,20 +26,19 @@
     background-image: url(/img/bg-back-desktop@1x.jpg);
     background-repeat: no-repeat;
     height: 850px;
-  } 
+  }
 }
 
 .site-list_item a{
   text-transform: uppercase;
   font-size: 18px;
   line-height: 32px;
-  font-weight: 700; 
+  font-weight: 700;
   color: #ffffff;
 }
 
 .page-header__button-nav {
   background-position: 0 0;
-  
   width: 50px;
   height: 25px;
   background-image: url(/img/icon-menu-burger.svg);
@@ -53,7 +51,6 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  
   background-color: #283645;
 }
 
@@ -146,13 +143,11 @@
     height: 110px;
     display: flex;
     padding-right: 10px;
-    
   }
   .main-nav__list {
     align-items: center;
   }
   .site-list_item a{
-    font-weight: 300; 
+    font-weight: 300;
   }
 }
-

@@ -1,4 +1,8 @@
 .price {
+  margin: 0 auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f2f2f2;
 }
 
@@ -11,15 +15,21 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
+  margin: 0;
 }
 
 .price__value {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  text-align: center;
+  margin: 0;
 }
 
 .price__service {
+  margin: 0;
+  padding: 0;
   color: #283645;
   list-style: none;
 }
@@ -27,13 +37,48 @@
 .price__list__hit {
   font-size: 14px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .price__list__name {
   background-color: #283645;
+  padding-top:  20px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+  padding-left: 70px;
 }
 
-.price__service {
+.price__service__item {
   background-color: #ffffff;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+}
+
+.price__text {
+  margin: 0;
+}
+
+.price__service__item--yes:after {
+  content: "";
+  background-image: url(/img/icon-yes.svg);
+  display: block;
+  position: relative;
+  bottom: 20px;
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+.price__service__item--no:after {
+  content: "";
+  background-image: url(/img/icon-no.svg);
+  display: block;
+  position: relative;
+  bottom: 20px;
+  width: 27px;
+  height: 27px;
+  margin-left: auto;
 }

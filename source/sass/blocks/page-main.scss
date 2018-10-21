@@ -1,5 +1,39 @@
 .page-main__title {
   font-size: 24px;
+  line-height: 29px;
   font-weight: 300;
   color: #ffffff;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: -670px;
+  padding-top: 35px;
+  padding-right: 28px;
+  padding-bottom: 50px;
+  padding-left: 28px;
+  text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 475px;
+    margin-top: -620px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 820px;
+    margin-top: -690px;
+    padding-top: 70px;
+    padding-bottom: 95px;
+  }
+}
+
+
+
+
+

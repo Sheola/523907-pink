@@ -4,30 +4,31 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-      </a>
-      <button class="page-header__button-nav" type="button"><span class="visually-hidden">Меню</span></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="site-list_item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list_item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list_item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list_item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-and-menu">
+          <a class="page-header__logo" href="index.html"></a>
+          <button class="page-header__button-nav" type="button"><span class="visually-hidden">Меню</span></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="site-list_item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list_item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list_item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list_item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Фотографии пользователей</h1>
@@ -39,64 +40,78 @@
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Анна <span class="photo__time">(5 минут назад)</span></cite>
-          <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 215</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Анна <span class="photo__time">(5 минут назад)</span></cite>
+            <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 215</p>
+          </div>
         </section>
         <section class="photo__item">
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Левон <span class="photo__time"></span>(5 часов назад)</cite>
-          <p class="photo__text">Вчера он на летал, сегодня в руки к нам попал.</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 356</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Левон <span class="photo__time"></span>(5 часов назад)</cite>
+            <p class="photo__text">Вчера он на летал, сегодня в руки к нам попал.</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 356</p>
+          </div>
         </section>
         <section class="photo__item">
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Антон <span class="photo__time">(12 часов назад)</span></cite>
-          <p class="photo__text">Соседи будут рады!</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 666</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Антон <span class="photo__time">(12 часов назад)</span></cite>
+            <p class="photo__text">Соседи будут рады!</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 666</p>
+          </div>
         </section>
         <section class="photo__item">
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Борис <span class="photo__time">(20 часов назад)</span></cite>
-          <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 215</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Борис <span class="photo__time">(20 часов назад)</span></cite>
+            <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 215</p>
+          </div>
         </section>
         <section class="photo__item">
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Сергей <span class="photo__time">(25 часов назад)</span></cite>
-          <p class="photo__text">Самая кубанская в мире!</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 4</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Сергей <span class="photo__time">(25 часов назад)</span></cite>
+            <p class="photo__text">Самая кубанская в мире!</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 4</p>
+          </div>
         </section>
         <section class="photo__item">
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Максим <span class="photo__time">(40 часов назад)</span></cite>
-          <p class="photo__text">Где снег-то?</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 150</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Максим <span class="photo__time">(40 часов назад)</span></cite>
+            <p class="photo__text">Где снег-то?</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 150</p>
+          </div>
         </section>
         <section class="photo__item">
           <a class="photo__author-picture">
             <img src="http://placehold.it/150x100">
           </a>
-          <cite class="photo__author-name">Надежда <span class="photo__time">(45 часов назад)</span></cite>
-          <p class="photo__text">Всем GM и взамные лайки!</p>
-          <button class="photo__heart" type="button">Поставить лайк</button>
-          <p class="photo__like">Нравится: 2560</p>
+          <div class="photo__item__wrapper">
+            <cite class="photo__author-name">Надежда <span class="photo__time">(45 часов назад)</span></cite>
+            <p class="photo__text">Всем GM и взамные лайки!</p>
+            <button class="photo__heart" type="button">Поставить лайк</button>
+            <p class="photo__like">Нравится: 2560</p>
+          </div>
         </section>
         <p class="photo__text-info">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
@@ -105,35 +120,38 @@
         <label class="upload__label">
 		  <input class="upload__file-input" type="file" name="photo"> 
 		</label>
-        <ul class="upload__work-photo">
-          <li class="work-photo__item work-photo__item-active">Обрезать</li>
-          <li class="work-photo__item">Цвет</li>
-          <li class="work-photo__item">Контрастность</li>
-        </ul>
-        <button class="upload__button button" type="submit">Запостить</button>
-        <button class="cancel__button button" type="reset">Отмена</button>
+        <div class="upload__wrapper">
+          <ul class="upload__work-photo">
+            <li class="work-photo__item work-photo__item-active">Обрезать</li>
+            <li class="work-photo__item">Цвет</li>
+            <li class="work-photo__item">Контрастность</li>
+          </ul>
+          <button class="upload__button button" type="submit">Запостить</button>
+          <button class="cancel__button button" type="reset">Отмена</button>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <a class="page-footer__logo" href="index.html">
-          <img src="/img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
-        </a>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Youtube</a>
-          </li>
-        </ul>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <a class="page-footer__logo" href="index.html">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy"><span class="visually-hidden">Twitter</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"> <span class="visually-hidden">Facebook</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy"> <span class="visually-hidden">Youtube</span></a>
+            </li>
+          </ul>
         </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
   </body>

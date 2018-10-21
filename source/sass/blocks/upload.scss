@@ -1,5 +1,9 @@
 .upload {
   background-color: #f2f2f2;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .upload__file-input {
@@ -20,9 +24,16 @@
 
 .upload__work-photo {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-left: 35px;
+  padding-right: 45px;
+  justify-content: space-between;
 }
 
 .upload__button {
+  width: 280px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -34,6 +45,7 @@
 }
 
 .cancel__button {
+  width: 280px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -44,3 +56,27 @@
   border-radius: 30px;
   opacity: 0.1;
 }
+
+
+@media (min-width: $tablet-width) {
+  .upload {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .upload__wrapper {
+    width: 300px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .upload {
+    width: 920px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+

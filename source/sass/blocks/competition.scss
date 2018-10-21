@@ -1,108 +1,362 @@
-.competition__text-preview {
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
-}  
-
-.competition-form__full-name label {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400; 
-  color: #d22856;
-}
-
-.competition-form__full-name input {
-  font-size: 18px;
-  line-height: 30px;
-  border-radius: 3px; 
-  border: 2px solid #e2e2e2;
+/* Общее */
+.competition {
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .competition-form fieldset{
   border: none;
 }
 
-.competition-surname {
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700; 
-  color: #d22856;
+.competition-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .competition {
+    width: 660px;
+  }
+  .competition-form__full-name {
+    order: 1;
+  }
+  .competition-form__apps {
+    order: 2;
+  }
+  .competition-form__data {
+    order: 3;
+  }
+  .competition-form__achievements {
+    order: 4;
+  }
+  .competition-form__emotions {
+    order: 5;
+  }
+  .competition__button {
+    order: 6;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .competition {
+    width: 960px;
+  }
+  .competition-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+/* Текст превью */
+.competition__text-preview {
+  width: 280px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  margin: 0 auto;
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__text-preview {
+    width: 490px;
+    font-size: 18px;
+    padding-top: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__text-preview {
+    width: 760px;
+    font-size: 18px;
+  }
+}
+
+/* Ввод ФИО */
+.competition-form__full-name {
+  .competition-item {
+    display: flex;
+    flex-direction: column;
+  }
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  label {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400; 
+    color: #d22856;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  input {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 3px; 
+    border: 2px solid #e2e2e2;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .competition-form__full-name {
+    
+    width: 620px;
+    .competition-item {
+      flex-direction: row;
+    }
+    label {
+      padding-right: 20px;
+    }
+    input {
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-form__full-name {
+    width: 435px;
+  }
+}
+
+/* Выбор достижений */
+.competition-form__achievements__list{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .competition-form__achievements {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 auto;
   background-color: #f2f2f2;
+  label {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    padding-left: 30px;
+  }
+  .competition-item {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .competition-attaining {
-  
+  padding-left: 30px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
+  width: 220px;
+  display: flex;
+  text-align: center;
 }
 
-.competition-form__achievements label {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
+@media (min-width: $tablet-width) {
+  .competition-form__achievements {
+    background-color: #ffffff;
+    label {
+      padding-left: 20px;
+    }
+  }
+  .competition-attaining {
+    width: 435px;
+  }
+}
+  
+@media (min-width: $desktop-width) {
+  .competition-form__achievements__list {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .competition-list__item {
+    width: 260px;
+  }
 }
 
-.competition-form__data label {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400; 
-  color: #d22856;
+/* Ввод телефона и почты */
+.competition-form__data {
+  .competition-item {
+    display: flex;
+    flex-direction: column;
+  }
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  label {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400; 
+    color: #d22856;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  input {
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 3px; 
+    border: 2px solid #e2e2e2;
+    padding-left: 20px;
+  }
 }
 
-.competition-form__data input {
-  font-size: 18px;
-  line-height: 30px;
-  border-radius: 3px; 
-  border: 2px solid #e2e2e2;
+@media (min-width: $tablet-width) {
+  .competition-form__data {
+    width: 620px;
+    label {
+      order: 2;
+    }
+    .competition-item {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-form__data {
+    width: 940px;
+  }
+}
+
+/* Выбор приложения */
+.competition-form__apps__list{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .competition-form__apps {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 auto;
   background-color: #f2f2f2;
+  label {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    padding-left: 30px;
+  }
+  .competition-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
-
 .competition-app {
+   padding-left: 30px;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
+  width: 220px;
+  display: flex;
+  text-align: center;
 }
 
-.competition-form__apps label {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
-}
-.competition-form__emotions label{
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400; 
-  color: #d22856;
+@media (min-width: $tablet-width) {
+  .competition-form__apps {
+    background-color: #ffffff;
+    label {
+      padding-left: 20px;
+    }
+  }
+  .competition-app {
+    width: 435px;
+  }
 }
 
+/* Ввод эмоций */
+.competition-form__emotions {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  label {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400; 
+    color: #d22856;
+    text-align: center;
+  }
+  textarea {
+    width: 240px;
+    height: 160px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    padding: 20px;
+    resize: none;
+  }
+  .competition-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .competition-form__emotions {
+    textarea {
+    width: 470px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-form__emotions {
+    textarea {
+    width: 780px;
+    height: 85px;
+    }
+  }
+}
+
+/* Кнопка отправки*/
 .competition__button {
+  margin: 0 auto;
+  width: 280px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-
-  padding: 17px 35px;
-
+  padding: 25px 48px;
   vertical-align: middle;
-
   color: #ffffff;
   background-color: #2aab6d;
   border: none;
   border-radius: 5px; 
+  display: flex;
+  text-transform: uppercase;
 }
 
 .competition__text-info {
@@ -110,7 +364,46 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+  padding-bottom: 60px;
 }
+
 .competition__text-info sup {
   color: #d22856;
+}
+
+.competition__text-info-desktop {
+  display: none;
+}
+
+.competition__text-preview__text{
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__button {
+    margin-left: 20px;
+  }
+  .competition__text-info {
+    margin-top: -50px;
+    display: flex;
+    padding-left: 435px;
+    padding-bottom: 110px;
+  }
+  .competition__text-preview__text{
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__button {
+    margin-left: 10px;
+  }
+  .competition__text-info {
+    padding-left: 630px;
+    padding-bottom: 105px;
+  }
+  .competition__text-info-desktop {
+    display: block;
+  }
 }

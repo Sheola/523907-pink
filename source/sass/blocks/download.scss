@@ -1,35 +1,67 @@
 .download {
-    padding: 0 20px;
-
-    color: #fff;
-    background-color: #1d2631;
+  padding-top: 65px;
+  margin: 0 auto;
+}
+/* "Рука" */
+.download::before {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  padding-top: 40px;
+  background-image: url(/img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 258px;
+  height: 286px;
 }
 
+@media (min-width: $tablet-width) {
+  .download::before {
+    width: 700px;
+    height: 545px;
+    padding-top: 9px;
+    position: absolute;
+    left: 0px;
+    background-image: url(/img/iphone-hand-tablet@1x.png);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download::before {
+    padding-top: 25px;
+    width: 1050px;
+    height: 645px;
+    left: 0px;
+    background-image: url(/img/iphone-hand-desktop@1x.png);
+  }
+}
+
+/* Лого для скачиваний */
 .download__link--apple::before {
-    width: 50px;
-    height: 60px;
+  width: 47px;
+  height: 57px;
 
-    content: '';
+  content: '';
 
-    background-image: url(/img/logo-apple.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  background-image: url(/img/logo-apple.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .download__link--android::before {
-    width: 50px;
-    height: 60px;
+  width: 43px;
+  height: 47px;
 
-    content: '';
+  content: '';
 
-    background-image: url(/img/logo-android.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  background-image: url(/img/logo-android.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .download__link--windows::before {
-  width: 50px;
-  height: 60px;
+  width: 44px;
+  height: 41px;
 
   content: '';
 
@@ -44,9 +76,18 @@
 
 .download__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+  align-items: center;
+  padding-top: 15px;
 }
 
+/* Кнопка скачать приложение */
 .download__button {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -60,10 +101,79 @@
   border-radius: 30px;
 }
 
+/* Заголовок */
 .download__title {
-    font-weight: 300;
+  display: none;
+}
 
+.download__wrapper {
+  background-color: #1d2631;
+  width: 280px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.download__text {
+  display: block;
+  width: 280px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    width: 660px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .download__title {
+    width: 200px;
     display: block;
-
     text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: #ffffff;
+    position: relative;
+    padding-left: 105px;
+    padding-top: 30px;
+  }
+  .download__wrapper {
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .download__title {
+    width: 200px;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: #ffffff;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+  .download__wrapper {
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+    padding-left: 0;
+  }
 }

@@ -1,8 +1,132 @@
+/* Неполный подвал для мобильной версии главной страницы*/
+.page-footer__wrapper--index {
+  display: none;
+}
+
+/*Общее*/
 .page-footer {
   background-color: #ffffff;
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.copyright__text {
+  color: #283645;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-footer {
+    width: 620px;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Логотип*/
+.page-footer__logo {
+  margin-left: 65px;
+  margin-right: 65px;
+  background-image: url(/img/logo-pink-blue-mobile.svg);
+  width: 146px;
+  height: 40px;
+  display: block;
+}
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    background-image: url(/img/logo-pink-blue-desktop.svg);
+  }
+}
+
+/* Иконки соц.сетей*/
+.social__link--twitter:before {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  content: '';
+
+  background-image: url(/img/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social__link--facebook::before {
+  width: 40px;
+  height: 40px;
+  display: block;
+
+  content: '';
+
+  background-image: url(/img/icon-facebook.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social__link--youtube::before {
+  width: 40px;
+  height: 40px;
+  display: block;
+
+  content: '';
+
+  background-image: url(/img/icon-youtube.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.copyright__link:before {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  content: '';
+
+  background-image: url(/img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Контактная информация*/
+.contacts__list{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
 .contacts__title{
   color: #283645;
   font-size: 24px;
@@ -23,12 +147,36 @@
   font-weight: 300;
 }
 
-.copyright__text {
-  color: #283645;
-  font-size: 14px;
-  line-height: 18px;
+.contacts__item {
+  display: flex;
+  flex-direction: column;
 }
 
-.social__list {
-    list-style: none;
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contacts__item {
+    width: 240px;
+  }
+  .contacts__title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    width: 940px;
+  }
+  .contacts__title{
+    width: 940px;
+    font-size: 40px;
+  }
 }

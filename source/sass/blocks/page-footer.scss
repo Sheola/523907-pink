@@ -7,14 +7,16 @@
 .page-footer__logo {
   margin-left: 65px;
   margin-right: 65px;
-  background-image: url(/img/logo-pink-blue-mobile.svg);
+  background-image: url(../img/logo-pink-blue-mobile.svg);
+  background-repeat: no-repeat; 
   width: 146px;
   height: 40px;
   display: block;
+  padding-bottom: 33px;
 }
 @media (min-width: $desktop-width) {
   .page-footer__logo {
-    background-image: url(/img/logo-pink-blue-desktop.svg);
+    background-image: url(../img/logo-pink-blue-desktop.svg);
   }
 }
 
@@ -26,7 +28,7 @@
 
   content: '';
 
-  background-image: url(/img/icon-twitter.svg);
+  background-image: url(../img/icon-twitter.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -38,7 +40,7 @@
 
   content: '';
 
-  background-image: url(/img/icon-facebook.svg);
+  background-image: url(../img/icon-facebook.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -50,7 +52,7 @@
 
   content: '';
 
-  background-image: url(/img/icon-youtube.svg);
+  background-image: url(../img/icon-youtube.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -62,7 +64,7 @@
 
   content: '';
 
-  background-image: url(/img/logo-htmlacademy.svg);
+  background-image: url(../img/logo-htmlacademy.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -130,6 +132,7 @@
     width: 400px;
     font-size: 40px;
     line-height: 48px;
+    padding-top: 0;
   }
 }
 
@@ -188,10 +191,17 @@
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    padding-top: 13px;
+  }
   .page-footer__social {
+    width: 420px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -201,14 +211,49 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    
+  }
+  .page-footer__copyright {
+    padding-left: 0;
+    padding-right: 0;
+    width: 135px;
+  }
+  .social__list {
+    width: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .page-footer__logo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copyright__text {
+    width: 100px;
+  }
+  .copyright__link {
+    width: 28px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-footer {
+    padding-top: 10px;
     width: 960px;
     padding-left: 110px;
     padding-right: 110px;
+  }
+  .page-footer__social {
+    padding-left: 10px;
+    width: 570px;
+  }
+  .page-footer__copyright {
+    width: 155px;
+    padding-right: 10px;
+  }
+  .copyright__text {
+    font-size: 18px;
+  }
+  .contacts__list {
+    padding-top: 2px;
   }
 }
 

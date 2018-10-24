@@ -4,7 +4,11 @@
   
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   margin: 0 auto;
+  margin-bottom: 40px;
+  
 }
 
 .upload__file-input {
@@ -20,7 +24,8 @@
 
   cursor: pointer;
 
-  background-image: url(/img/photo-road-mobile@1x.jpg);
+  background-image: url(../img/photo-road-mobile@1x.jpg);
+  
 }
 
 .upload__work-photo {
@@ -31,6 +36,8 @@
   padding-left: 35px;
   padding-right: 45px;
   justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 63px;
 }
 
 .upload__button {
@@ -43,6 +50,8 @@
   vertical-align: middle;
   border: 3px solid #d22856;
   border-radius: 30px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
 }
 
 .cancel__button {
@@ -56,25 +65,74 @@
   border: 3px solid #283645;
   border-radius: 30px;
   opacity: 0.1;
+  background-color: #f2f2f2;
 }
 
 
 @media (min-width: $tablet-width) {
   .upload {
+    padding-top: 60px;
     width: 620px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
   }
   .upload__wrapper {
     width: 300px;
   }
-
+  .upload__label {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/photo-road-tablet@1x.jpg);
+  }
+  .upload__work-photo {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .work-photo__item {
+    padding-bottom: 25px;
+  }
+  .upload__button {
+    width: 257px;
+  }
+  .cancel__button {
+    margin-top: 12px;
+    width: 257px;
+  }
+  .button__wrapper {
+    padding-left: 27px;
+    padding-top: 67px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .upload {
-    width: 920px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 800px;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-bottom: 90px;
+  }
+  .upload__label {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/photo-road-desktop@1x.jpg);
+  }
+  .upload__wrapper {
+    width: 410px;
+  }
+  .button__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-top: 144px;
+  }
+  .upload__button {
+    width: 180px;
+    margin-bottom: 0;
+  }
+  .cancel__button {
+    width: 180px;
+    margin-top: 0;
   }
 }

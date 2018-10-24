@@ -1,11 +1,16 @@
+.price__service--full {
+  display: none;
+}
+
 .price {
   margin: 0 auto;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f2f2f2;
-  padding-top: 95px;
+  padding-top: 97px;
   padding-bottom: 35px;
+  overflow: hidden;
 }
 
 .price__list {
@@ -87,14 +92,24 @@
 */
 
 .price__list {
+  width: 860px;
   display: flex;
-  width: 830px;
-  margin-left: -275px;
   justify-content: space-between;
 }
 
+.price__wrapper {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+}
+
 .price__item {
-  width: 275px;
+  width: 280px;
+  margin: 0 1px;
 }
 
 .price__list__hit {
@@ -109,4 +124,92 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 28px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .price {
+    width: 620px;
+    padding-top: 87px;
+    padding-bottom: 64px;
+  }
+  .price__service--full {
+    display: block;
+    margin-top: auto;
+  }
+  .price__text--mob {
+    display: none;
+  }
+  .price__item {
+    width: 150px;
+  }
+  .price__list__name {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+  }
+  .price__name {
+    font-size: 16px;
+  }
+  .price__value {
+    font-size: 18px;
+  }
+  .price__text {
+    text-transform: none;
+  }
+  .price__wrapper {
+    width: 615px;
+    left: 0;
+    transform: translate(0);
+  }
+  .price__toggles { 
+    display: none;
+  }
+  .price__service__item {
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    width: 960px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 145px;
+    padding-bottom: 95px;
+  }
+  .price__wrapper {
+    width: 960px;
+  }
+  .price__list {
+    width: 940px;
+  }
+  .price__list__name {
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+  .price__name {
+    font-size: 18px;
+  }
+  .price__value {
+    font-size: 24px;
+  }
+  .price__text {
+    font-size: 18px;
+  }
+  .price__item {
+    width: 235px;
+  }
+  .price__service--full {
+    width: 235px;
+  }
+  .price__service__item {
+    padding-left: 22px;
+    padding-top: 17px;
+    padding-bottom: 21px;
+  }
 }

@@ -8,7 +8,7 @@
   right: 30px;
   content: "";
   display: block;
-  background-image: url(/img/iphone-hand-mobile@1x.png);
+  background-image: url(../img/iphone-hand-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
   width: 258px;
@@ -23,7 +23,7 @@
     padding-top: 9px;
     position: absolute;
     left: 0px;
-    background-image: url(/img/iphone-hand-tablet@1x.png);
+    background-image: url(../img/iphone-hand-tablet@1x.png);
   }
 }
 
@@ -32,9 +32,12 @@
     position: absolute;
     width: 1050px;
     height: 645px;
-    left: 75px;
+    left: 70px;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 12px;
-    background-image: url(/img/iphone-hand-desktop@1x.png);
+    background-image: url(../img/iphone-hand-desktop@1x.png);
   }
 }
 
@@ -45,7 +48,7 @@
 
   content: '';
 
-  background-image: url(/img/logo-apple.svg);
+  background-image: url(../img/logo-apple.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -56,7 +59,7 @@
 
   content: '';
 
-  background-image: url(/img/logo-android.svg);
+  background-image: url(../img/logo-android.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -67,7 +70,7 @@
 
   content: '';
 
-  background-image: url(/img/logo-microsoft.svg);
+  background-image: url(../img/logo-microsoft.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }

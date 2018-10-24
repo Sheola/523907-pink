@@ -4,6 +4,8 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 35px;
+  margin-top: 30px;
 }
 
 .photo__text-info{
@@ -11,10 +13,13 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
+  width: 250px;
+  padding-left: 15px;
 }
 
 .photo__item {
   background-color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .photo__panorama-day {
@@ -24,6 +29,17 @@
   line-height:24px;
   color: #ffffff;
 }
+
+.photo__rating__wrapper {
+  display: flex;
+}
+
+.photo__item--panorama {
+  .photo__author-picture {
+    margin-left: -20px;
+  }
+}
+
 
 .photo__author-name {
   font-style: normal;
@@ -41,6 +57,7 @@
   color: #283645;
 }
 .photo__text {
+  margin-top: 0;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -53,10 +70,10 @@
 }
 
 .photo__item__wrapper {
-  padding-top: 25px;
+  padding-top: 11px;
   padding-right: 20px;
   padding-bottom: 25px;
-  padding-left: 20px;
+  padding-left: 19px;
 }
 
 

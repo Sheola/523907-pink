@@ -6,14 +6,21 @@
   font-size: 24px;
   color: #283645;
   text-align: center;
+  padding-top: 16px;
+  line-height: 30px;
+}
+
+.information__description {
+  padding-bottom: 3px;
 }
 
 @media (min-width: $tablet-width) {
   .information {
-    padding-top: 60px;
+    padding-top: 46px;
     width: 620px;
     font-size: 40px;
     line-height: 48px;
+    padding-bottom: 30px;
   }
   .information__description-offer {
     margin: 0 auto;
@@ -27,7 +34,7 @@
 
 @media (min-width: $desktop-width) {
   .information {
-    padding-top: 80px;
+    padding-top: 70px;
     width: 820px;
     font-size: 50px;
     line-height: 60px;

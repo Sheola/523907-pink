@@ -5,6 +5,7 @@
   background-color: #f2f2f2;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 67px;
 }
 
 .advantages__list {
@@ -23,29 +24,36 @@
   background-image: url(/img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
   position: relative;
-  left: 65px;
+  left: 62px;
+  margin-top: 27px;
 }
 
 .advantages__title {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .advantages__description {
   color: #283645;
   font-size: 14px;
   line-height: 24px;
+  margin-top: -5px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 660px;
-    height: 480px;
+    width: 620px;
+    height: 430px;
+  }
+  .advantages__list {
+    padding-top: 20px;
   }
   .advantages__item {
     padding-left: 310px;
+    padding-bottom: 7px;
   }
   .advantages__list::after {
     content: "";
@@ -56,14 +64,15 @@
     background-repeat: no-repeat;
     position: relative;
     left: 0;
-    top: -455px;
+    top: -500px;
   }
   .advantages__title {
-    padding-top: 20px;
     text-align: left;
+    margin: 0;
+    padding-bottom: 18px;
   }
   .advantages__description {
-    width: 290px;
+    width: 310px;
     text-align: left;
   }
 }
@@ -71,13 +80,14 @@
 @media (min-width: $desktop-width) {
   .advantages {
     width: 960px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
     height: auto;
+    padding-top: 20px;
   }
   .advantages__list {
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     justify-content: space-between;
   }
@@ -118,13 +128,17 @@
     left: 0;
   }
   .advantages__title {
-    width: 215px;
+    padding-left: 30px;
+    padding-top: 55px;
+    width: 230px;
     text-align: center;
     font-size: 30px;
     line-height: 30px;
   }
 
   .advantages__description {
+    padding-left: 25px;
+    padding-top: 10px;
     width: 240px;
     text-align: center;
     font-size: 18px;

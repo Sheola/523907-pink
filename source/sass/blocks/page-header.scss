@@ -2,14 +2,11 @@
   display: none;
 }
 
-@media (min-width: $desktop-width) {
-  display: block;
-}
 
 .page-header {
-  margin: 0 auto;
   background-image: url(/img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-position: center 0;
   height: 730px;
 }
 
@@ -87,9 +84,9 @@
   margin: 0 auto;
   width: 280px;
   height: 25px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   padding-left: 20px;
   background-color: rgba(0,0,0,0.3);
 }
@@ -102,10 +99,12 @@
 
 @media (min-width: $tablet-width) {
   .page-header__logo-and-menu {
-    width: 660px;
+    width: 620px;
     height: 40px;
-    padding-right: 30px;
-    padding-bottom: 50px;
+    padding-top: 29px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
   }
   .page-header__logo {
     background-image: url(/img/logo-pink-white-tablet.svg);
@@ -125,6 +124,8 @@
     justify-content: space-between;
     width: 960px;
     align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
   }
   .page-header__logo {
     background-image: url(/img/logo-pink-white-desktop.svg);

@@ -3,59 +3,6 @@
   display: none;
 }
 
-/*Общее*/
-.page-footer {
-  background-color: #ffffff;
-  text-align: center;
-  width: 280px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-.copyright__text {
-  color: #283645;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
-.social__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer__social {
-    display: flex;
-    justify-content: space-between;
-  }
-  .page-footer {
-    width: 620px;
-  }
-  .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: 940px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 /* Логотип*/
 .page-footer__logo {
   margin-left: 65px;
@@ -121,6 +68,11 @@
 }
 
 /* Контактная информация*/
+.page-footer__contacts {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
 .contacts__list{
   margin: 0;
   padding: 0;
@@ -130,6 +82,7 @@
 .contacts__title{
   color: #283645;
   font-size: 24px;
+  line-height: 24px;
   font-weight: 300;
 }
 
@@ -150,8 +103,12 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
+  padding-top: 19px;
 }
 
+.contacts__address {
+  margin: 0;
+}
 
 @media (min-width: $tablet-width) {
   .contacts__list {
@@ -161,22 +118,97 @@
     justify-content: center;
   }
   .contacts__item {
-    width: 240px;
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .contacts__title{
     margin-left: auto;
     margin-right: auto;
     width: 400px;
     font-size: 40px;
+    line-height: 48px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__list {
     width: 940px;
+    padding-left: 10px;
   }
   .contacts__title{
-    width: 940px;
-    font-size: 40px;
+    font-size: 50px;
+    width: 465px;
+    line-height: 60px;
+  }
+  .contacts__text {
+    padding-bottom: 23px;
+  }
+  .contacts__item--phone {
+    order: 1;
+  }
+  .contacts__item--adress {
+    order: 2;
+  }
+  .contacts__item--mail {
+    order: 3;
+  }
+  
+}
+
+/*Общее*/
+.page-footer {
+  background-color: #ffffff;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.copyright__text {
+  color: #283645;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page-footer {
+    width: 620px;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
   }
 }
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 960px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+

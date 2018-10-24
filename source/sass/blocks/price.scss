@@ -4,6 +4,8 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f2f2f2;
+  padding-top: 95px;
+  padding-bottom: 35px;
 }
 
 .price__list {
@@ -42,30 +44,31 @@
 
 .price__list__name {
   background-color: #283645;
-  padding-top:  20px;
+  padding-top:  18px;
   padding-right: 70px;
   padding-bottom: 20px;
   padding-left: 70px;
 }
 
 .price__service__item {
+  padding-top: 20px;
+  padding-right: 23px;
+  padding-left: 22px;
+  padding-bottom: 20px;
   background-color: #ffffff;
-  padding-top: 25px;
-  padding-right: 25px;
-  padding-bottom: 5px;
-  padding-left: 25px;
+  margin-bottom: 3px;
 }
 
 .price__text {
   margin: 0;
 }
 
+/*
 .price__service__item--yes:after {
   content: "";
   background-image: url(/img/icon-yes.svg);
   display: block;
   position: relative;
-  bottom: 20px;
   width: 27px;
   height: 27px;
   background-repeat: no-repeat;
@@ -77,8 +80,33 @@
   background-image: url(/img/icon-no.svg);
   display: block;
   position: relative;
-  bottom: 20px;
   width: 27px;
   height: 27px;
   margin-left: auto;
+}
+*/
+
+.price__list {
+  display: flex;
+  width: 830px;
+  margin-left: -275px;
+  justify-content: space-between;
+}
+
+.price__item {
+  width: 275px;
+}
+
+.price__list__hit {
+  position: relative;
+  left: 0;
+}
+
+.price__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
 }

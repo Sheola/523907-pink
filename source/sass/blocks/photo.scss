@@ -1,37 +1,35 @@
 .photo {
   overflow-x: hidden;
+  background-color: #ffffff;
+  position: relative;
 }
 
 .photo__text-title{
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
   width: 250px;
-  padding-left: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
 }
 
-.photo__text-info{
+.photo__text-info {
   width: 280px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
-  width: 250px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  padding-bottom: 28px;
+  padding-top: 19px;
+  margin: 0 auto;
+  padding-bottom: 43px;
 }
 
 .photo__item {
   width: 280px;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .photo__panorama-day {
@@ -40,15 +38,33 @@
   font-weight: 700;
   line-height:24px;
   color: #ffffff;
+  background-color: #d22856;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  position: absolute;
+  margin-top: -137px;
+  margin-left: 138px;
+}
+
+.photo__heart {
+  background-image: url(../img/icon-heart.svg);
+  width: 13px;
+  height: 12px;
+  border: 0;
+  background-color: transparent;
+}
+.photo__like {
+  margin: 0;
+  padding-left: 18px;
 }
 
 .photo__rating__wrapper {
   display: flex;
+  align-items: center;
 }
 
-.photo__item--panorama {
-  
-}
 
 .photo__item--panorama {
   picture {
@@ -82,6 +98,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  margin-bottom: 8px;
 }
 .photo__like {
   text-transform: uppercase;
@@ -91,10 +108,10 @@
 }
 
 .photo__item__wrapper {
-  padding-top: 14px;
+  padding-top: 16px;
   padding-right: 20px;
-  padding-bottom: 25px;
-  padding-left: 19px;
+  padding-bottom: 18px;
+  padding-left: 18px;
 }
 
 .photo__wrapper {
@@ -103,7 +120,6 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 33px;
-  margin-top: 30px;
   width: 280px;
 }
 
@@ -121,10 +137,21 @@
   }
   .photo__item--panorama {
     width: 620px;
+    margin-bottom: 48px;
     .photo__item__wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      padding-top: 24px;
+      padding-left: 30px;
+      padding-right: 28px;
+      padding-bottom: 17px;
+    }
+    .photo__rating__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 120px;
+      padding: 0;
     }
     .photo__author-name {
       order: 1;
@@ -136,6 +163,12 @@
       order: 2;
     }
   }
+  .photo__item__wrapper {
+    padding-top: 22px;
+    padding-left: 30px;
+    padding-right: 28px;
+    padding-bottom: 17px;
+  }
   .photo__text-title {
     padding-left: 0;
     padding-bottom: 55px;
@@ -143,28 +176,38 @@
     width: 445px;
   }
   .photo__text-info {
-    padding-top: 28px;
+    padding-top: 45px;
     font-size: 18px;
     width: 445px;
     padding-left: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
   .photo {
     margin-top: 60px;
   }
- 
   .photo__rating__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    width: 240px;
   }
-   .photo__heart {
+  .photo__like {
+    padding-left: 0;
+  }
+  .photo__heart {
     order: 2;
   }
+  .photo__panorama-day {
+    margin-top: -453px;
+    margin-left: 480px;
+  }
+  .photo__text {
+    height: 45px;
+  }
 }
-
-
 @media (min-width: $desktop-width) {
   .photo__wrapper {
     width: 940px;
@@ -184,9 +227,27 @@
   .photo__text-title {
     width: 580px;
     padding-bottom: 70px;
+    padding-top: 0;
+    margin-top: 15px;
   }
   .photo__text-info {
-    padding-top: 22px;
+    padding-top: 8px;
+    padding-bottom: 63px;
+  }
+  .photo__item {
+    margin-bottom: 55px;
+  }
+  .photo__panorama-day {
+    margin-top: -453px;
+    margin-left: 800px;
+  }
+  .photo__item--panorama {
+    margin-bottom: 42px;
+    .photo__item__wrapper {
+      padding-left: 28px;
+      padding-right: 30px;
+      padding-bottom: 0;
+    }
   }
 }
 

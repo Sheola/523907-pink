@@ -3,12 +3,14 @@
 }
 
 .price {
+  background-color: #f2f2f2;
+}
+
+.price__wrapper {
   margin: 0 auto;
-  width: 280px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #f2f2f2;
-  padding-top: 97px;
+  padding-top: 107px;
   padding-bottom: 35px;
   overflow: hidden;
 }
@@ -97,7 +99,7 @@
   justify-content: space-between;
 }
 
-.price__wrapper {
+.price__slider__wrapper {
   overflow-x: hidden;
   position: relative;
   width: 100vw;
@@ -124,11 +126,12 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 28px;
+  position: relative;
 }
 
 
 @media (min-width: $tablet-width) {
-  .price {
+  .price__wrapper {
     width: 620px;
     padding-top: 87px;
     padding-bottom: 64px;
@@ -158,7 +161,7 @@
   .price__text {
     text-transform: none;
   }
-  .price__wrapper {
+  .price__slider__wrapper {
     width: 615px;
     left: 0;
     transform: translate(0);
@@ -175,14 +178,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .price {
+  .price__wrapper {
     width: 960px;
     padding-left: 110px;
     padding-right: 110px;
     padding-top: 145px;
     padding-bottom: 95px;
   }
-  .price__wrapper {
+  .price__slider__wrapper {
     width: 960px;
   }
   .price__list {

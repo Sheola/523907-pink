@@ -33,8 +33,16 @@
   background-color: #283645;
   border-bottom: 1px solid #000000;
 }
+.page-header__logo {
+  width: 75px;
+  height: auto;
+}
 
 @media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 146px;
+    height: auto;
+  }
   .page-header {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
@@ -75,8 +83,6 @@
     justify-content: space-between;
     width: 960px;
     align-items: center;
-    padding-left: 110px;
-    padding-right: 110px;
   }
   
   .page-header__logo-and-menu {

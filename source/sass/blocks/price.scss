@@ -57,7 +57,7 @@
   padding-left: 70px;
 }
 
-.price__service__item {
+.price__service-item {
   padding-top: 20px;
   padding-right: 23px;
   padding-left: 22px;
@@ -71,7 +71,7 @@
 }
 
 /*
-.price__service__item--yes::after {
+.price__service-item--yes::after {
   content: "";
   background-image: url(/img/icon-yes.svg);
   display: block;
@@ -82,7 +82,7 @@
   margin-left: auto;
 }
 
-.price__service__item--no::after {
+.price__service-item--no::after {
   content: "";
   background-image: url(/img/icon-no.svg);
   display: block;
@@ -192,7 +192,7 @@
   .price__toggles { 
     display: none;
   }
-  .price__service__item {
+  .price__service-item {
     padding-left: 15px;
     padding-top: 13px;
     padding-bottom: 12px;
@@ -233,7 +233,7 @@
   .price__service--full {
     width: 235px;
   }
-  .price__service__item {
+  .price__service-item {
     padding-left: 22px;
     padding-top: 17px;
     padding-bottom: 21px;

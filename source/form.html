@@ -10,7 +10,13 @@
       <div class="page-header__top">
         <div class="page-header__wrapper">
           <div class="page-header__logo-and-menu">
-            <a class="page-header__logo" href="index.html"></a>
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 768px)" srcset="../img/logo-pink-white-tablet.svg">
+                <img src="../img/logo-pink-white-mobile.svg" alt="Логотип">
+              </picture>
+            </a>
             <button class="page-header__button-nav" type="button"><span class="visually-hidden">Меню</span></button>
           </div>
           <nav class="main-nav">

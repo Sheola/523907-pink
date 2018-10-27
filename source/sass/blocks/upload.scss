@@ -28,7 +28,7 @@
   background-image: url(../img/photo-road-mobile@1x.jpg);
   
 }
-.upload__work-photo {
+.upload__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -113,7 +113,7 @@
     padding-top: 8px;
     padding-bottom: 0;
   }
-  .upload__work-photo__item {
+  .work-photo__item {
     width: 240px;
     display: flex;
     justify-content: space-between;
@@ -129,19 +129,19 @@
   .upload__bar {
     width: 200px;
   }
-  .upload__work-photo__item-crop {
+  .work-photo__item-crop {
     .upload__bar-toggle {
       left: 145px;
       top: 2px;
     }
   }
-  .upload__work-photo__item-fill {
+  .work-photo__item-fill {
     .upload__bar-toggle {
       left: 25px;
       top: 2px;
     }
   }
-  .upload__work-photo__item-contrast {
+  .work-photo__item-contrast {
     .upload__bar-toggle {
       left: 95px;
       top: 2px;
@@ -154,7 +154,7 @@
     justify-content: space-between;
     padding-bottom: 50px;
   }
-  .upload__work-photo__wrapper {
+  .upload__edit {
     width: 300px;
   }
   .upload__label {
@@ -162,14 +162,14 @@
     height: 400px;
     background-image: url(../img/photo-road-tablet@1x.jpg);
   }
-  .upload__work-photo {
+  .upload__list {
     padding-top: 5px;
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
   }
-  .upload__work-photo__item {
+  .work-photo__item {
     padding-bottom: 25px;
   }
   .upload__button__to-send {
@@ -197,7 +197,7 @@
     height: 400px;
     background-image: url(../img/photo-road-desktop@1x.jpg);
   }
-  .upload__work-photo__wrapper {
+  .upload__edit {
     width: 410px;
     margin-top: -10px;
   }
@@ -216,7 +216,7 @@
     width: 180px;
     margin-top: 0;
   }
-  .upload__work-photo__item {
+  .work-photo__item {
     width: 380px;
     padding-right: 28px;
     padding-bottom: 11px;
@@ -227,7 +227,7 @@
   .upload__bar__wrapper {
     padding-top: 21px;
   }
-  .upload__work-photo__item-crop {
+  .work-photo__item-crop {
     .upload__bar-toggle {
       left: 71px;
       top: 15px;
@@ -237,7 +237,7 @@
       height: 45px;
     }
   }
-  .upload__work-photo__item-fill {
+  .work-photo__item-fill {
     .upload__bar-toggle {
       left: 248px;
       top: 15px;
@@ -247,7 +247,7 @@
       height: 48px;
     }
   }
-  .upload__work-photo__item-contrast {
+  .work-photo__item-contrast {
     .upload__bar-toggle {
       left: 160px;
       top: 15px;

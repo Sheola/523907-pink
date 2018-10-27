@@ -15,16 +15,16 @@
           </div>
           <nav class="main-nav">
             <ul class="main-nav__list">
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="form.html">Конкурс</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-nav__item">
                 <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
@@ -38,7 +38,7 @@
         <h2 class="visually-hidden">Фотографии</h2>
         <div class="photo__wrapper">
           <p class="photo__text-title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <section class="photo__item photo__item--panorama">
+          <div class="photo__item photo__item--panorama">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
@@ -55,8 +55,8 @@
                 <p class="photo__like">Нравится: 215</p>
               </div>
             </div>
-          </section>
-          <section class="photo__item">
+          </div>
+          <div class="photo__item">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
@@ -72,8 +72,8 @@
                 <p class="photo__like">Нравится: 356</p>
               </div>
             </div>
-          </section>
-          <section class="photo__item">
+          </div>
+          <div class="photo__item">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
@@ -89,8 +89,8 @@
                 <p class="photo__like">Нравится: 666</p>
               </div>
             </div>
-          </section>
-          <section class="photo__item">
+          </div>
+          <div class="photo__item">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
@@ -106,8 +106,8 @@
                 <p class="photo__like">Нравится: 215</p>
               </div>
             </div>
-          </section>
-          <section class="photo__item">
+          </div>
+          <div class="photo__item">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
@@ -123,8 +123,8 @@
                 <p class="photo__like">Нравится: 4</p>
              </div>
             </div>
-          </section>
-          <section class="photo__item">
+          </div>
+          <div class="photo__item">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
@@ -140,8 +140,8 @@
                 <p class="photo__like">Нравится: 150</p>
               </div>
             </div>
-          </section>
-          <section class="photo__item">
+          </div>
+          <div class="photo__item">
             <a class="photo__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
@@ -157,7 +157,7 @@
                 <p class="photo__like">Нравится: 2560</p>
               </div>
             </div>
-          </section>
+          </div>
           <p class="photo__text-info">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
@@ -169,7 +169,7 @@
 		  </label>
           <div class="upload__work-photo__wrapper">
             <ul class="upload__work-photo">
-              <li class="work-photo__item work-photo__item-crop">
+              <li class="upload__work-photo__item upload__work-photo__item-crop">
                 <span class="visually-hidden">Обрезать</span>
                 <img src="../img/icon-editor-crop.svg">
                 <div class="upload__bar__wrapper upload__bar__wrapper--full">
@@ -177,7 +177,7 @@
                   <div class="upload__bar-toggle"></div>
                 </div>
               </li>
-              <li class="work-photo__item  work-photo__item-fill">
+              <li class="upload__work-photo__item  upload__work-photo__item-fill">
                 <span class="visually-hidden">Цвет</span>
                 <img src="../img/icon-editor-fill.svg">
                 <div class="upload__bar__wrapper upload__bar__wrapper--full">
@@ -185,7 +185,7 @@
                   <div class="upload__bar-toggle"></div>
                 </div>
               </li>
-              <li class="work-photo__item  work-photo__item-contrast">
+              <li class="upload__work-photo__item  upload__work-photo__item-contrast">
                 <span class="visually-hidden">Контрастность</span>
                 <img src="../img/icon-editor-contrast.svg">
                 <div class="upload__bar__wrapper upload__bar__wrapper--full">
@@ -198,9 +198,9 @@
               <div class="upload__bar"></div>
               <div class="upload__bar-toggle"></div>
             </div>
-            <div class="button__wrapper">
-              <button class="upload__button button" type="submit">Запостить</button>
-              <button class="cancel__button button" type="reset">Отмена</button>
+            <div class="upload__button__wrapper">
+              <button class="upload__button__to-send button" type="submit">Запостить</button>
+              <button class="upload__button__cancel button" type="reset">Отмена</button>
             </div>
           </div>
         </div>

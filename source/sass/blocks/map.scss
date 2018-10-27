@@ -1,0 +1,19 @@
+.page-footer__map__iframe {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer__map__iframe {
+    height: 375px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__map__iframe {
+    height: 500px;
+  }
+}

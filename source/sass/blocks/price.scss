@@ -71,7 +71,7 @@
 }
 
 /*
-.price__service__item--yes:after {
+.price__service__item--yes::after {
   content: "";
   background-image: url(/img/icon-yes.svg);
   display: block;
@@ -82,7 +82,7 @@
   margin-left: auto;
 }
 
-.price__service__item--no:after {
+.price__service__item--no::after {
   content: "";
   background-image: url(/img/icon-no.svg);
   display: block;
@@ -127,6 +127,29 @@
   margin-right: auto;
   padding-top: 28px;
   position: relative;
+}
+
+.price__toggle {
+  width: 3px;
+  height: 3px;
+  padding: 3px;
+  border-radius: 50%;
+  vertical-align: top;
+  background-color: #bec2c7;
+  border: none;
+  position: relative;
+}
+
+.price__toggle--active::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 3px solid #283645;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: -3px;
 }
 
 

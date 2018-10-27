@@ -65,7 +65,6 @@
   align-items: center;
 }
 
-
 .photo__item--panorama {
   picture {
     overflow-x: hidden;
@@ -93,6 +92,7 @@
   font-weight: 300;
   color: #283645;
 }
+
 .photo__text {
   margin-top: 0;
   font-size: 14px;
@@ -124,6 +124,7 @@
 }
 
 @media (min-width: $tablet-width) {
+  
   .photo__wrapper {
     width: 620px;
     margin: 0 auto;
@@ -132,9 +133,11 @@
     justify-content: space-between;
     padding-top: 75px;
   }
+  
   .photo__item {
     width: 300px;
   }
+  
   .photo__item--panorama {
     width: 620px;
     margin-bottom: 48px;
@@ -163,18 +166,21 @@
       order: 2;
     }
   }
+  
   .photo__item__wrapper {
     padding-top: 22px;
     padding-left: 30px;
     padding-right: 28px;
     padding-bottom: 17px;
   }
+  
   .photo__text-title {
     padding-left: 0;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     font-size: 18px;
     width: 445px;
   }
+  
   .photo__text-info {
     padding-top: 45px;
     font-size: 18px;
@@ -184,9 +190,11 @@
     margin-right: auto;
     padding-bottom: 70px;
   }
+  
   .photo {
     margin-top: 60px;
   }
+  
   .photo__rating__wrapper {
     display: flex;
     justify-content: space-between;
@@ -194,21 +202,27 @@
     padding-bottom: 5px;
     width: 240px;
   }
+  
   .photo__like {
     padding-left: 0;
   }
+  
   .photo__heart {
     order: 2;
   }
+  
   .photo__panorama-day {
     margin-top: -453px;
     margin-left: 480px;
   }
+  
   .photo__text {
     height: 45px;
   }
+  
 }
 @media (min-width: $desktop-width) {
+  
   .photo__wrapper {
     width: 940px;
     margin: 0 auto;
@@ -218,29 +232,36 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  
   .photo__item--panorama {
     width: 940px;
   }
+  
   .photo {
     margin-top: 2px;
   }
+  
   .photo__text-title {
     width: 580px;
     padding-bottom: 70px;
     padding-top: 0;
     margin-top: 15px;
   }
+  
   .photo__text-info {
     padding-top: 8px;
     padding-bottom: 63px;
   }
+  
   .photo__item {
     margin-bottom: 55px;
   }
+  
   .photo__panorama-day {
     margin-top: -453px;
     margin-left: 800px;
   }
+  
   .photo__item--panorama {
     margin-bottom: 42px;
     .photo__item__wrapper {
@@ -249,5 +270,6 @@
       padding-bottom: 0;
     }
   }
+  
 }
 

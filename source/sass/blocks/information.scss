@@ -15,6 +15,7 @@
 }
 
 @media (min-width: $tablet-width) {
+  
   .information {
     padding-top: 46px;
     width: 620px;
@@ -22,17 +23,21 @@
     line-height: 48px;
     padding-bottom: 30px;
   }
+  
   .information__description-offer {
     margin: 0 auto;
     width: 450px;
   }
+  
   .information__description {
     margin-top: 0;
     margin-bottom: 0;
   }
+  
 }
 
 @media (min-width: $desktop-width) {
+  
   .information {
     padding-top: 70px;
     width: 820px;
@@ -41,4 +46,5 @@
     padding-left: 120px;
     padding-right: 120px;
   } 
+  
 }

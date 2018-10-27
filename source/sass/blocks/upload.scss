@@ -17,7 +17,6 @@
   display: none;
 }
 
-
 .upload__label {
   display: block;
 
@@ -42,7 +41,7 @@
   align-items: center;
 }
 
-.upload__button {
+.upload__button__to-send {
   width: 280px;
   font-size: 18px;
   font-weight: 700;
@@ -56,7 +55,7 @@
   margin-bottom: 10px;
 }
 
-.cancel__button {
+.upload__button__cancel {
   width: 280px;
   font-size: 18px;
   font-weight: 700;
@@ -114,7 +113,7 @@
     padding-top: 8px;
     padding-bottom: 0;
   }
-  .work-photo__item {
+  .upload__work-photo__item {
     width: 240px;
     display: flex;
     justify-content: space-between;
@@ -130,19 +129,19 @@
   .upload__bar {
     width: 200px;
   }
-  .work-photo__item-crop {
+  .upload__work-photo__item-crop {
     .upload__bar-toggle {
       left: 145px;
       top: 2px;
     }
   }
-  .work-photo__item-fill {
+  .upload__work-photo__item-fill {
     .upload__bar-toggle {
       left: 25px;
       top: 2px;
     }
   }
-  .work-photo__item-contrast {
+  .upload__work-photo__item-contrast {
     .upload__bar-toggle {
       left: 95px;
       top: 2px;
@@ -170,17 +169,17 @@
     padding-right: 0;
     padding-bottom: 0;
   }
-  .work-photo__item {
+  .upload__work-photo__item {
     padding-bottom: 25px;
   }
-  .upload__button {
+  .upload__button__to-send {
     width: 257px;
   }
-  .cancel__button {
+  .upload__button__cancel {
     margin-top: 12px;
     width: 257px;
   }
-  .button__wrapper {
+  .upload__button__wrapper {
     padding-left: 29px;
     padding-top: 34px;
   }
@@ -191,7 +190,7 @@
     width: 800px;
     padding-left: 80px;
     padding-right: 60px;
-    margin-bottom: 90px;
+    margin-bottom: 35px;
   }
   .upload__label {
     width: 300px;
@@ -202,22 +201,22 @@
     width: 410px;
     margin-top: -10px;
   }
-  .button__wrapper {
+  .upload__button__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 0;
     padding-top: 144px;
   }
-  .upload__button {
+  .upload__button__to-send {
     width: 180px;
     margin-bottom: 0;
   }
-  .cancel__button {
+  .upload__button__cancel {
     width: 180px;
     margin-top: 0;
   }
-  .work-photo__item {
+  .upload__work-photo__item {
     width: 380px;
     padding-right: 28px;
     padding-bottom: 11px;
@@ -228,7 +227,7 @@
   .upload__bar__wrapper {
     padding-top: 21px;
   }
-  .work-photo__item-crop {
+  .upload__work-photo__item-crop {
     .upload__bar-toggle {
       left: 71px;
       top: 15px;
@@ -238,7 +237,7 @@
       height: 45px;
     }
   }
-  .work-photo__item-fill {
+  .upload__work-photo__item-fill {
     .upload__bar-toggle {
       left: 248px;
       top: 15px;
@@ -248,7 +247,7 @@
       height: 48px;
     }
   }
-  .work-photo__item-contrast {
+  .upload__work-photo__item-contrast {
     .upload__bar-toggle {
       left: 160px;
       top: 15px;
@@ -260,7 +259,7 @@
       height: 32px;
     }
   }
-  .button__wrapper {
+  .upload__button__wrapper {
     padding-top: 128px;
     padding-left: 2px;
   }

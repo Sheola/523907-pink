@@ -8,8 +8,6 @@
 
 .price__wrapper {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 107px;
   padding-bottom: 35px;
   overflow: hidden;
@@ -52,9 +50,7 @@
 .price__list__name {
   background-color: #283645;
   padding-top:  18px;
-  padding-right: 70px;
   padding-bottom: 20px;
-  padding-left: 70px;
 }
 
 .service__item {
@@ -170,8 +166,6 @@
     width: 150px;
   }
   .price__list__name {
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 13px;
     padding-bottom: 8px;
   }
@@ -203,8 +197,6 @@
 @media (min-width: $desktop-width) {
   .price__wrapper {
     width: 960px;
-    padding-left: 110px;
-    padding-right: 110px;
     padding-top: 145px;
     padding-bottom: 95px;
   }

@@ -65,8 +65,6 @@ input {
 @media (min-width: $desktop-width) {
   .competition__wrapper {
     width: 960px;
-    padding-left: 111px;
-    padding-right: 111px;
   }
   .competition-form {
     flex-direction: row;
@@ -297,7 +295,6 @@ input {
   }
   .achievements__item {
     width: 260px;
-    padding-top: 10px;
   }
   .achievements__list {
     padding-top: 32px;

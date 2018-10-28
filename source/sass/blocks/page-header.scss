@@ -9,6 +9,13 @@
   background-color: #283645;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-header {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: auto 400px;
+  }
+}
+
 .page-header__button-nav {
   display: none;
   background-position: 0 0;
@@ -26,10 +33,10 @@
   margin: 0 auto;
   width: 280px;
   height: 25px;
-  padding-top: 21px;
-  padding-right: 20px;
-  padding-bottom: 21px;
   padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   background-color: #283645;
   border-bottom: 1px solid #000000;
 }
@@ -50,14 +57,17 @@
     background-position: bottom;
     position: relative;
   }
-  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: 660px auto;
+    }
+  }
   .page-header__logo-and-menu {
     width: 620px;
     height: 40px;
     padding-top: 26px;
-    padding-right: 20px;
     padding-bottom: 42px;
-    padding-left: 20px;
   }
   .page-header__button-nav {
     margin-top: auto;
@@ -72,7 +82,11 @@
     background-position: center 0;
     background-size: cover;
   }
-  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url(../img/bg-back-desktop@2x.jpg); 
+    }
+  }
   .page-header__top {
     background-color: rgba(0,0,0,0.3);
   }
@@ -81,15 +95,16 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 960px;
+    width: 940px;
     align-items: center;
   }
   
   .page-header__logo-and-menu {
     background-color: transparent;
+    width: 320px;
     padding-top: 30px;
-    padding-left: 10px;
-    padding-bottom: 45px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
   }
   

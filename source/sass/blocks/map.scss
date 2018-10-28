@@ -14,5 +14,6 @@
 @media (min-width: $desktop-width) {
   .map__iframe {
     height: 500px;
+    padding-bottom: 0;
   }
 }

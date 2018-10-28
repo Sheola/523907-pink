@@ -25,7 +25,7 @@
   content: '';
   background-image: url(../img/icon-twitter.svg);
   background-repeat: no-repeat;
-  background-position: 15px 12px;
+  background-position: 13px 14px;
   
 }
 
@@ -53,17 +53,17 @@
   background-position: 15px 14px;
 }
 
-.copyright__link::before {
+.copyright__link {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 33px;
   content: '';
   background-image: url(../img/logo-htmlacademy.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  right: 63px;
-  top: -5px;
   position: absolute;
+  left: 175px;
+  top: -7px;
 }
 
 /*Общее*/
@@ -118,7 +118,7 @@
   .page-footer__copyright {
     padding-left: 0;
     padding-right: 0;
-    width: 135px;
+    width: 150px;
   }
   .social__list {
     width: 180px;
@@ -135,12 +135,12 @@
   }
   .copyright__text {
     width: 100px;
-    padding-left: 0;
+    padding-left: 14px;
     padding-top: 20px;
   }
-  .copyright__link::before {
-    right: -13px;
-    top: 13px;
+  .copyright__link {
+    left: 123px;
+    top: 14px;
   }
 }
 
@@ -159,6 +159,7 @@
   }
   .copyright__text {
     font-size: 18px;
+    padding-left: 0;
   }
   .page-footer__logo {
     background-image: url(../img/logo-pink-blue-desktop.svg);
@@ -171,8 +172,8 @@
     padding-right: 0;
     margin-top: 1px;
   }
-  .copyright__link::before {
-    right: -1px;
-    top: 13px;
+  .copyright__link {
+    left: 123px;
+    top: 14px;
   }
 }

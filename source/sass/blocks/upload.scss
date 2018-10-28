@@ -19,14 +19,17 @@
 
 .upload__label {
   display: block;
-
   width: 280px;
   height: 375px;
-
   cursor: pointer;
-
   background-image: url(../img/photo-road-mobile@1x.jpg);
-  
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .upload__label {
+    background-image: url(../img/photo-road-mobile@2x.jpg);
+    background-size: 280px auto;
+  }
 }
 .upload__list {
   list-style: none;
@@ -162,6 +165,12 @@
     height: 400px;
     background-image: url(../img/photo-road-tablet@1x.jpg);
   }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .upload__label {
+      background-image: url(../img/photo-road-tablet@2x.jpg);
+      background-size: 300px auto;
+    }
+  }
   .upload__list {
     padding-top: 5px;
     flex-direction: column;
@@ -196,6 +205,12 @@
     width: 300px;
     height: 400px;
     background-image: url(../img/photo-road-desktop@1x.jpg);
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .upload__label {
+      background-image: url(../img/photo-road-desktop@2x.jpg);
+      background-size: 300px auto;
+    }
   }
   .upload__edit {
     width: 410px;

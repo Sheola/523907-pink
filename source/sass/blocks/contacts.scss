@@ -1,19 +1,31 @@
 /* Контактная информация*/
-.page-footer__contacts {
+.contacts {
   background-color: #ffffff;
   text-align: center;
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  position: relative; 
+  
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 200px;
+  left: 0;
+  top: 385px;
 }
 
 .contacts__list{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-
+  width: 280px;
   list-style: none;
 }
 
@@ -22,6 +34,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  margin-top: 0;
 }
 
 .contacts__text {
@@ -50,12 +63,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__contacts {
-    padding-top: 13px;
+  .contacts {
+    padding-top: 25px;
     width: 620px;
     padding-bottom: 0;
   }
+  .contacts::after {
+    top: 391px;
+  }
   .contacts__list {
+    margin: 0 auto;
     width: 620px;
     display: flex;
     flex-wrap: wrap;
@@ -66,8 +83,9 @@
     width: 270px;
     padding-top: 10px;
     padding-bottom: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
+    
   }
   
   .contacts__title{
@@ -77,17 +95,19 @@
     font-size: 40px;
     line-height: 48px;
     padding-top: 0;
+    margin-top: 0;
   }
   
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__contacts {
+  .contacts {
     padding-top: 25px;
     width: 960px;
-    padding-left: 110px;
-    padding-right: 110px;
     padding-bottom: 15px;
+  }
+  .contacts::after {
+    top: 330px;
   }
   .contacts__list {
     width: 940px;
@@ -97,6 +117,7 @@
   }
   
   .contacts__item {
+    padding-top: 15px;
     padding-bottom: 0;
   }
   

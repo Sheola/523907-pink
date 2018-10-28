@@ -1,15 +1,19 @@
-.service__list--full {
-  display: none;
-}
-
 .price {
   background-color: #f2f2f2;
+  position: relative;
+}
+.price::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 100%;
 }
 
 .price__wrapper {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 107px;
   padding-bottom: 35px;
   overflow: hidden;
@@ -52,9 +56,7 @@
 .price__list__name {
   background-color: #283645;
   padding-top:  18px;
-  padding-right: 70px;
   padding-bottom: 20px;
-  padding-left: 70px;
 }
 
 .service__item {
@@ -64,34 +66,40 @@
   padding-bottom: 20px;
   background-color: #ffffff;
   margin-bottom: 3px;
+  position: relative;
 }
 
 .service__text {
   margin: 0;
 }
+.service__list--full {
+  display: none;
+}
 
-/*
+
 .service__item--yes::after {
   content: "";
   background-image: url(/img/icon-yes.svg);
-  display: block;
-  position: relative;
+  background-repeat: no-repeat;
+  position: absolute;
   width: 27px;
   height: 27px;
   background-repeat: no-repeat;
-  margin-left: auto;
+  left: 232px;
+  top: 20px;
 }
 
 .service__item--no::after {
   content: "";
   background-image: url(/img/icon-no.svg);
-  display: block;
-  position: relative;
+  background-repeat: no-repeat;
+  position: absolute;
   width: 27px;
   height: 27px;
-  margin-left: auto;
+  left: 230px;
+  top: 15px;
 }
-*/
+
 
 .price__list {
   width: 860px;
@@ -153,10 +161,16 @@
 }
 
 
+
+
 @media (min-width: $tablet-width) {
+  .price {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
   .price__wrapper {
     width: 620px;
-    padding-top: 87px;
+    padding-top: 107px;
     padding-bottom: 64px;
   }
   .service__list--full {
@@ -170,8 +184,6 @@
     width: 150px;
   }
   .price__list__name {
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 13px;
     padding-bottom: 8px;
   }
@@ -198,14 +210,24 @@
     padding-bottom: 12px;
     height: 20px;
   }
+  .service__item--yes::after {
+    left: 68px;
+    top: 12px;
+  }
+  .service__item--no::after {
+    left: 66px;
+    top: 8px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .price {
+    margin-top: -55px;
+    margin-bottom: 40px;
+  }
   .price__wrapper {
     width: 960px;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 145px;
+    padding-top: 150px;
     padding-bottom: 95px;
   }
   .price__slider__wrapper {
@@ -237,5 +259,13 @@
     padding-left: 22px;
     padding-top: 17px;
     padding-bottom: 21px;
+  }
+  .service__item--yes::after {
+    left: 102px;
+    top: 25px;
+  }
+  .service__item--no::after {
+    left: 102px;
+    top: 18px;
   }
 }

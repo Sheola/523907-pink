@@ -1,49 +1,28 @@
 .download {
-  padding-top: 65px;
+  padding-top: 109px;
   margin: 0 auto;
 }
+
 /* "Рука" */
 .download::before {
-  margin: 0 auto;
+  position: relative;
+  right: 30px;
   content: "";
   display: block;
-  padding-top: 40px;
-  background-image: url(/img/iphone-hand-mobile@1x.png);
+  background-image: url(../img/iphone-hand-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
   width: 258px;
   height: 286px;
-}
-
-@media (min-width: $tablet-width) {
-  .download::before {
-    width: 700px;
-    height: 545px;
-    padding-top: 9px;
-    position: absolute;
-    left: 0px;
-    background-image: url(/img/iphone-hand-tablet@1x.png);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download::before {
-    padding-top: 25px;
-    width: 1050px;
-    height: 645px;
-    left: 0px;
-    background-image: url(/img/iphone-hand-desktop@1x.png);
-  }
+  margin: 0 auto;
 }
 
 /* Лого для скачиваний */
 .download__link--apple::before {
   width: 47px;
   height: 57px;
-
   content: '';
-
-  background-image: url(/img/logo-apple.svg);
+  background-image: url(../img/logo-apple.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -51,10 +30,8 @@
 .download__link--android::before {
   width: 43px;
   height: 47px;
-
   content: '';
-
-  background-image: url(/img/logo-android.svg);
+  background-image: url(../img/logo-android.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -62,10 +39,8 @@
 .download__link--windows::before {
   width: 44px;
   height: 41px;
-
   content: '';
-
-  background-image: url(/img/logo-microsoft.svg);
+  background-image: url(../img/logo-microsoft.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -76,13 +51,13 @@
 
 .download__list {
   list-style: none;
-  padding: 0;
   display: flex;
   justify-content: space-between;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 36px;
+  padding-right: 37px;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 17px;
+  padding-bottom: 9px;
 }
 
 /* Кнопка скачать приложение */
@@ -91,14 +66,12 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-
-  padding: 17px 35px;
-
+  padding: 16px 35px;
   vertical-align: middle;
-
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 30px;
+  text-align: center;
 }
 
 /* Заголовок */
@@ -109,9 +82,10 @@
 .download__wrapper {
   background-color: #1d2631;
   width: 280px;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 28px;
   margin: 0 auto;
 }
 
@@ -123,15 +97,26 @@
   line-height: 24px;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  
+  .download::before {
+    width: 700px;
+    height: 545px;
+    padding-top: 9px;
+    position: absolute;
+    left: 0px;
+    background-image: url(../img/iphone-hand-tablet@1x.png);
+  }
+  
   .download {
     width: 660px;
     position: relative;
-    margin: 0 auto;
+    margin-top: -42px;
+    padding-right: 37px;
   }
+  
   .download__title {
     width: 200px;
     display: block;
@@ -141,39 +126,87 @@
     line-height: 48px;
     color: #ffffff;
     position: relative;
-    padding-left: 105px;
-    padding-top: 30px;
+    padding-left: 87px;
+    padding-top: 27px;
   }
+  
   .download__wrapper {
     margin: 0;
     background-color: transparent;
     position: relative;
-    padding-left: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download {
-    width: 960px;
-    position: relative;
-    margin: 0 auto;
-  }
-  .download__title {
-    width: 200px;
-    display: block;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 48px;
-    color: #ffffff;
-    position: relative;
     padding-left: 40px;
     padding-top: 30px;
   }
+  
+  .download__button {
+    width: 220px;
+  }
+  
+  .download__list {
+    padding-top: 32px;
+    padding-left: 43px;
+    padding-right: 33px;
+  }
+  
+  .download__text {
+    padding-top: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+  }
+  
+}
+
+@media (min-width: $desktop-width) {
+  
+  .download::before {
+    position: absolute;
+    width: 1050px;
+    height: 645px;
+    left: 70px;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 12px;
+    background-image: url(../img/iphone-hand-desktop@1x.png);
+  }
+  
+  .download {
+    padding-top: 125px;
+    padding-left: 60px;
+    width: 960px;
+    position: relative;
+  }
+  
+  .download__title {
+    width: 230px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 30px;
+    padding-top: 25px;
+  }
+  
   .download__wrapper {
     margin: 0;
     background-color: transparent;
     position: relative;
     padding-left: 0;
+    padding-top: 50px;
   }
+  
+  .download__list {
+    padding-top: 53px;
+  }
+  
+  .download__text {
+    padding-top: 30px;
+  }
+  
+  .download__button {
+    line-height: 18px;
+    font-size: 21px;
+    padding: 16px 21px;
+    width: 250px;
+  }
+  
 }

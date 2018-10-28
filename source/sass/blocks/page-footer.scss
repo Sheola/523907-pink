@@ -3,8 +3,71 @@
   display: none;
 }
 
+/* Логотип*/
+.page-footer__logo {
+  margin-left: 65px;
+  margin-right: 65px;
+  background-image: url(../img/logo-pink-blue-mobile.svg);
+  background-repeat: no-repeat; 
+  width: 146px;
+  height: 40px;
+  display: block;
+  padding-bottom: 30px;
+}
+
+/* Иконки соц.сетей*/
+.social__link--twitter::before {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #e5e5e5;
+  border-radius: 50%;
+  content: '';
+  background-image: url(../img/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
+  
+}
+
+.social__link--facebook::before {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #e5e5e5;
+  border-radius: 50%;
+  display: block;
+  content: '';
+  background-image: url(../img/icon-facebook.svg);
+  background-repeat: no-repeat;
+  background-position: 16px 10px;
+}
+
+.social__link--youtube::before {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #e5e5e5;
+  border-radius: 50%;
+  display: block;
+  content: '';
+  background-image: url(../img/icon-youtube.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 14px;
+}
+
+.copyright__link::before {
+  display: block;
+  width: 40px;
+  height: 40px;
+  content: '';
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right: 63px;
+  top: -5px;
+  position: absolute;
+}
+
 /*Общее*/
-.page-footer {
+.page-footer__wrapper {
   background-color: #ffffff;
   text-align: center;
   width: 280px;
@@ -18,6 +81,7 @@
   justify-content: space-between;
   padding-left: 70px;
   padding-right: 70px;
+  position: relative;
 }
 
 .copyright__text {
@@ -25,6 +89,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  padding-left: 3px;
 }
 
 .social__list {
@@ -33,150 +98,83 @@
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 620px;
+    padding-top: 0px;
+  }
   .page-footer__social {
+    width: 420px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
-  }
-  .page-footer {
-    width: 620px;
   }
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
   }
+  .page-footer__copyright {
+    padding-left: 0;
+    padding-right: 0;
+    width: 135px;
+  }
+  .social__list {
+    width: 180px;
+    padding-left: 0;
+    padding-right: 20px;
+    margin-top: 1px;
+  }
+  .social__item {
+    padding-left: 0;
+  }
+  .page-footer__logo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copyright__text {
+    width: 100px;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .copyright__link::before {
+    right: -13px;
+    top: 13px;
+  }
 }
+
 @media (min-width: $desktop-width) {
-  .page-footer {
-    width: 940px;
+  .page-footer__wrapper {
+    padding-top: 70px;
+    width: 960px;
+  }
+  .page-footer__social {
     padding-left: 10px;
+    width: 570px;
+  }
+  .page-footer__copyright {
+    width: 155px;
     padding-right: 10px;
   }
-}
-
-/* Логотип*/
-.page-footer__logo {
-  margin-left: 65px;
-  margin-right: 65px;
-  background-image: url(/img/logo-pink-blue-mobile.svg);
-  width: 146px;
-  height: 40px;
-  display: block;
-}
-@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
   .page-footer__logo {
-    background-image: url(/img/logo-pink-blue-desktop.svg);
+    background-image: url(../img/logo-pink-blue-desktop.svg);
   }
-}
-
-/* Иконки соц.сетей*/
-.social__link--twitter:before {
-  display: block;
-  width: 40px;
-  height: 40px;
-
-  content: '';
-
-  background-image: url(/img/icon-twitter.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.social__link--facebook::before {
-  width: 40px;
-  height: 40px;
-  display: block;
-
-  content: '';
-
-  background-image: url(/img/icon-facebook.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.social__link--youtube::before {
-  width: 40px;
-  height: 40px;
-  display: block;
-
-  content: '';
-
-  background-image: url(/img/icon-youtube.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.copyright__link:before {
-  display: block;
-  width: 40px;
-  height: 40px;
-
-  content: '';
-
-  background-image: url(/img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-/* Контактная информация*/
-.contacts__list{
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-.contacts__title{
-  color: #283645;
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.contacts__text {
-  color: #283645;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.contacts__phone,
-.contacts__mail,
-.contacts__address{
-  color: #d22856;
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.contacts__item {
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media (min-width: $tablet-width) {
-  .contacts__list {
-    width: 620px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .page-footer__social {
+    width: 560px;
   }
-  .contacts__item {
-    width: 240px;
+  .social__list {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1px;
   }
-  .contacts__title{
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    font-size: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__list {
-    width: 940px;
-  }
-  .contacts__title{
-    width: 940px;
-    font-size: 40px;
+  .copyright__link::before {
+    right: -1px;
+    top: 13px;
   }
 }

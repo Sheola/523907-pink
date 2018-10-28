@@ -1,16 +1,21 @@
 .upload {
   background-color: #f2f2f2;
+}
+
+.upload__wrapper {
   width: 280px;
   
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .upload__file-input {
   display: none;
 }
-
 
 .upload__label {
   display: block;
@@ -20,10 +25,10 @@
 
   cursor: pointer;
 
-  background-image: url(/img/photo-road-mobile@1x.jpg);
+  background-image: url(../img/photo-road-mobile@1x.jpg);
+  
 }
-
-.upload__work-photo {
+.upload__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -31,9 +36,12 @@
   padding-left: 35px;
   padding-right: 45px;
   justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  align-items: center;
 }
 
-.upload__button {
+.upload__button__to-send {
   width: 280px;
   font-size: 18px;
   font-weight: 700;
@@ -43,9 +51,11 @@
   vertical-align: middle;
   border: 3px solid #d22856;
   border-radius: 30px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
 }
 
-.cancel__button {
+.upload__button__cancel {
   width: 280px;
   font-size: 18px;
   font-weight: 700;
@@ -56,25 +66,201 @@
   border: 3px solid #283645;
   border-radius: 30px;
   opacity: 0.1;
+  background-color: #f2f2f2;
+}
+.upload__bar__wrapper--full {
+  display: none;
 }
 
+.upload__bar__wrapper {
+  position: relative;
+  height: 41px;
+  padding-left: 18px;
+  padding-right: 17px;
+  padding-bottom: 32px;
+}
+
+.upload__bar {
+  background-color: #000000;
+  height: 2px;
+  width: 240px;
+}
+
+.upload__bar-toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  padding: 0;
+
+  width: 10px;
+  height: 10px;
+  border: 2px solid #d22856;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 210px;
+  top: -6px;
+}
 
 @media (min-width: $tablet-width) {
-  .upload {
+  .upload__bar__wrapper {
+    display: none;
+  }
+  .upload__bar__wrapper--full {
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+  .work-photo__item {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    img {
+      width: 22px;
+      height: 22px;
+      padding-right: 30px;
+    }
+  }
+  .upload__bar {
+    width: 200px;
+  }
+  .work-photo__item-crop {
+    .upload__bar-toggle {
+      left: 145px;
+      top: 2px;
+    }
+  }
+  .work-photo__item-fill {
+    .upload__bar-toggle {
+      left: 25px;
+      top: 2px;
+    }
+  }
+  .work-photo__item-contrast {
+    .upload__bar-toggle {
+      left: 95px;
+      top: 2px;
+    }
+  }
+  .upload__wrapper {
+    padding-top: 60px;
     width: 620px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
   }
-  .upload__wrapper {
+  .upload__edit {
     width: 300px;
   }
-
+  .upload__label {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/photo-road-tablet@1x.jpg);
+  }
+  .upload__list {
+    padding-top: 5px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .work-photo__item {
+    padding-bottom: 25px;
+  }
+  .upload__button__to-send {
+    width: 257px;
+  }
+  .upload__button__cancel {
+    margin-top: 12px;
+    width: 257px;
+  }
+  .upload__button__wrapper {
+    padding-left: 29px;
+    padding-top: 34px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .upload {
-    width: 920px;
-    padding-left: 10px;
-    padding-right: 10px;
+  .upload__wrapper {
+    width: 800px;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-bottom: 35px;
+  }
+  .upload__label {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/photo-road-desktop@1x.jpg);
+  }
+  .upload__edit {
+    width: 410px;
+    margin-top: -10px;
+  }
+  .upload__button__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-top: 144px;
+  }
+  .upload__button__to-send {
+    width: 180px;
+    margin-bottom: 0;
+  }
+  .upload__button__cancel {
+    width: 180px;
+    margin-top: 0;
+  }
+  .work-photo__item {
+    width: 380px;
+    padding-right: 28px;
+    padding-bottom: 11px;
+  }
+  .upload__bar {
+    width: 288px;
+  }
+  .upload__bar__wrapper {
+    padding-top: 21px;
+  }
+  .work-photo__item-crop {
+    .upload__bar-toggle {
+      left: 71px;
+      top: 15px;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .work-photo__item-fill {
+    .upload__bar-toggle {
+      left: 248px;
+      top: 15px;
+    }
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .work-photo__item-contrast {
+    .upload__bar-toggle {
+      left: 160px;
+      top: 15px;
+    }  
+    img {
+      padding-top: 2px;
+      padding-left: 6px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .upload__button__wrapper {
+    padding-top: 128px;
+    padding-left: 2px;
   }
 }

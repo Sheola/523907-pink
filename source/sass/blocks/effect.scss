@@ -6,10 +6,10 @@
   
   .effect__wrapper {
     margin: 0 auto;
-    display: block;
+    display: flex;
     width: 660px;
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
   
   .effect__text__wrapper {
@@ -44,23 +44,60 @@
     text-decoration: underline;
     padding-top: 8px;
   }
-  
+  .effect__timer {
+    position: relative;
+    width: 240px;
+    height: 276px;
+    padding-left: 20px;
+    margin-top: -10px;
+    }
+  .effect__timer::before {
+    content: "24";
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    top: 78px;
+    left: 140px;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 150px;
+    transform: translateX(-50%);
+    color: #d22856;
+  }
+  .effect__timer-icon {
+    width: 240px;
+    height: 276px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  
+  .effect__timer-icon {
+    width: 300px;
+    height: 345px;
+  }
+  .effect__timer { 
+    margin-top: -35px;
+    padding-left: 10px;
+  }
+  .effect__timer::before {
+    top: 96px;
+    left: 160px;
+    font-size: 120px;
+    line-height: 187px;
+  }
   .effect {
     background-color: #f2f2f2;
   }
   
   .effect__wrapper {
     width: 960px;
+    padding-bottom: 50px;
   }
   
   .effect__text__wrapper {
     padding-top: 35px;
     width: 582px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
   
   .effect__title {
@@ -69,7 +106,7 @@
   }
   
   .effect__text {
-    width: 521px;
+    width: 530px;
     font-size: 18px;
     line-height: 30px;
     padding-top: 8px;
